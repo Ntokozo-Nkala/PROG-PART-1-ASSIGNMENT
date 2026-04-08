@@ -110,7 +110,7 @@ public class Register {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////  
    public String returnLoginStatus(String username, String password){
     if(loginUser.equals(username) && loginUser.equals(password)){
-        return "Welcome back" + ","  + firstName + LastName + "it is great to see you!";
+        return "Welcome back" + ","  + firstName + lastName + "it is great to see you!";
     }
     else{
         return "Login failed, please ensure that the Username amd Password are correctly formatted";
