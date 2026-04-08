@@ -116,5 +116,11 @@ public class Register {
         return "Login failed, please ensure that the Username amd Password are correctly formatted";
     }
 }
+    public String getFirstName(){
+        return firstName;
+    }
+    public String getLastName(){
+        return lastName;
+    }
 }
 
