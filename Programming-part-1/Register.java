@@ -4,6 +4,32 @@ public class Register {
     private String username;
     private String password;
     private String cellPhoneNumber;
+    
+    System.out.println("++==================================================++");
+    System.out.println("++                                                  ++");
+    System.out.println("++                 HI THERE!  ^_^                   ++");
+    System.out.println("++      PLEASE REGISTER TO CREATE AN ACCOUNT.       ++");
+    System.out.println("++                                                  ++");
+    System.out.println("++                                                  ++");
+    System.out.println("++==================================================++");
+    System.out.println("[]+++++++++++Account Registration++++++++++++[]");
+
+public static void main(String[] args){
+      Scanner inputDevice = new Scanner(System.in);
+      System.out.print("Enter your First name: ");
+      firstName = inputDevice.nextLine();
+
+      System.out.print("Enter your Last name: ");
+      lastName = inputDevice.nextLine();
+
+      System.out.print("Enter your Username: ");
+      username = inputDevice.nextLine();
+
+      System.out.print("Enter your Password: ");
+      password = inputDevice.nextLine();
+
+      System.out.print("Enter South African Number: ");
+      cellPhoneNumber = inputDevice.nextLine();
 
     ///////////////////////////////////////////////////////
     // THIS checkUserName METHOD CHECKS THE USER NAME    //  
@@ -123,4 +149,5 @@ public class Register {
         return lastName;
     }
 }
-
+}
+}
