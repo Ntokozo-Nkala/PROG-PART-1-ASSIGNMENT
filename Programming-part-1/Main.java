@@ -44,15 +44,13 @@ System.out.println("Last Name: " + lastName);
 System.out.println("Username: " + userName);
 System.out.println("Password: " + password);
 System.out.println("Cell Phone Number: " + cellPhoneNumber);
-}
-  public void login(){
+
   System.out.print("You can now login.");
   System.out.println("Enter your userName: ");
   Scanner scanner = new Scanner(System.in);
   userName = scanner.nextLine();
   System.out.println("Enter your password: ");
   password = scanner.nextLine();
-}
     
     ///////////////////////////////////////////////////////
     // THIS checkUserName METHOD CHECKS THE USER NAME    //  
@@ -61,7 +59,7 @@ System.out.println("Cell Phone Number: " + cellPhoneNumber);
     // * AND SHOULD HAVE 5 OR LESS LETTERS               //
     //  IT RETURNS TRUE IF BOTH CONDITIONS ARE MET       //
     ///////////////////////////////////////////////////////
-public boolean checkUserName(String Name){
+public boolean checkUserName(String userName){
 boolean hasUnderscore = userName.contains("_");
 boolean shortEnough = userName.length() <= 5;
 return hasUnderscore && shortEnough;
@@ -78,7 +76,7 @@ return hasUnderscore && shortEnough;
     //  IT RETURNS TRUE IF ALL 4 CONDITIONS ARE MET                         //
     /////////////////////////////////////////////////////////////////////////
 public boolean checkUserPasswordComplexity(String password){
-boolean shortEnough = password.length() < 8;
+boolean longEnough = password.length() >= 8;
 boolean hasCapital = false;
 boolean hasNumber = false;
 boolean hasSpecialCharacter = false;
@@ -101,9 +99,6 @@ return shortEnough && hasCapital && hasNumber && hasSpecialCharacter;
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 public boolean checkCellPhoneNumber(String cellPhoneNumber){
 String phoneNumberRegex = "^\\+27[0-9]{9}$";
-if(cellPhoneNumber.matches(phoneNumberRegex)){
-  System.out.println("Cell phone number successfully added");
-}
 return cellPhoneNumber.matches(phoneNumberRegex);
 }
 
