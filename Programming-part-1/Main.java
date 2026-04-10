@@ -37,14 +37,6 @@ System.out.print("Enter your cell phone number: ");
 String cellPhoneNumber = scanner.nextLine();
 
 
-
-System.out.println("\nYour information has been successfully saved: ");
-System.out.println("First Name: " + firstName);
-System.out.println("Last Name: " + lastName);
-System.out.println("Username: " + userName);
-System.out.println("Password: " + password);
-System.out.println("Cell Phone Number: " + cellPhoneNumber);
-
   System.out.print("You can now login.");
   System.out.println("Enter your userName: ");
   Scanner scanner = new Scanner(System.in);
