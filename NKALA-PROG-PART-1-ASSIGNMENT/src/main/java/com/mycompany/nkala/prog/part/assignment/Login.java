@@ -193,7 +193,7 @@ if(!checkUserPasswordComplexity(password)){
     /// @return 
 public String returnLoginStatus(String userName, String password){
   if(loginUser(userName, password)){
-    return"Welcome" + firstName + ", " + lastName + "." + "It is nice to see you again.";
+    return"Welcome " + firstName + ", " + lastName + "." + "It is nice to see you again.";
   }
     else{
       return"Username or password incorrect. please try again.";
