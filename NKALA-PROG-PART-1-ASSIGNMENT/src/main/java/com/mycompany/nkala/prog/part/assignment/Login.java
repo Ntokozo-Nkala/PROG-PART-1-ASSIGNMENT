@@ -24,19 +24,19 @@ import java.util.Scanner;
 
 Scanner scanner = new Scanner(System.in);
 Login userLogin = new Login();
-System.out.println("Enter your First name: ");
+System.out.println("Enter your First Name: ");
 firstName = scanner.nextLine();
 
-System.out.println("Enter your Last name: ");
+System.out.println("Enter your Last Name: ");
 lastName = scanner.nextLine();
 
 System.out.println("Enter a Username: ");
 username = scanner.nextLine();
 
-System.out.println("Enter a password: ");
+System.out.println("Enter a Password: ");
 password = scanner.nextLine();
 
-System.out.println("Enter your Cell phone number: ");
+System.out.println("Enter your Cell Phone Number: ");
 cellPhoneNumber = scanner.nextLine();
 
 System.out.println(userLogin.registerUser(firstName, lastName, username, password, cellPhoneNumber));
